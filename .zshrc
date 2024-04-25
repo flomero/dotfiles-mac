@@ -1,8 +1,6 @@
 
 # MACOS SETTINGS
-defaults write -g com.apple.swipescrolldirection -bool FALSE
-osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true'
-defaults write -g ApplePressAndHoldEnabled -bool false
+source /Users/flfische/.macos
 
 # VS CODE
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
