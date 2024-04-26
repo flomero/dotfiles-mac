@@ -1,6 +1,6 @@
 
-# MACOS SETTINGS
-source /Users/flfische/.macos
+# MACOS
+alias pref="source ~/.macos"
 
 # VS CODE
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
