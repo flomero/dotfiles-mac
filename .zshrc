@@ -37,3 +37,10 @@ autoload -Uz compinit && compinit
 
 # Norminette
 alias norm="norminette | grep "Error" || echo '${TC_GREEN}Norm check OK: No error${TC_NC}'"
+
+# GIT
+# better git log
+alias gl="git log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gll="git log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
+# git status
+alias gs="git status"
