@@ -30,6 +30,19 @@ else
 	git clone git@github.com:xicodomingues/francinette.git $HOME/francinette
 fi
 
+# valgrind Docker setup
+# Check if the valgrind folder already exists
+if [ -d "$HOME/.docker_valgrind_setup" ]; then
+    echo "Valgrind Docker setup already exists."
+else
+    git clone https://github.com/Alphacharge/setup_docker_environment.git $HOME/setup_docker_environment
+    echo "Installed valgrind Docker setup."
+    echo "Run the following commands to set up the valgrind Docker environment:"
+    echo "cd $HOME/setup_docker_environment"
+    echo "chmod +x setup.sh"
+    echo "./setup.sh"
+fi
+
 # source the .bashrc file
 source $HOME/.bashrc
 
