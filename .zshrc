@@ -1,3 +1,7 @@
+# Define colors
+TC_GREEN=$'\e[0;32m'
+TC_RED=$'\e[0;31m'
+TC_NC=$'\e[0m'
 
 # MACOS
 alias pref="source ~/.macos"
@@ -30,3 +34,6 @@ export PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~ ${COLOR_GIT}$(parse_git_branch)${CO
 
 # Enable auto-completion
 autoload -Uz compinit && compinit
+
+# Norminette
+alias norm="norminette | grep "Error" || echo '${TC_GREEN}Norm check OK: No error${TC_NC}'"
