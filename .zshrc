@@ -39,8 +39,7 @@ zstyle ':completion:*' use-cache true # Cache completion to `${ZDOTDIR}/.zcompca
 zstyle ':completion:*' menu 'select' # Make the menu interactive with arrow keys.
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}" # Use LS_COLORS for completion colors.
 #enable colors for ls, etc.
-export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
+export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
 # Norminette
 alias norm="norminette | grep "Error" || echo '${TC_GREEN}Norm check OK: No error${TC_NC}'"
@@ -51,3 +50,8 @@ alias gl="git log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bol
 alias gll="git log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
 # git status
 alias gs="git status"
+
+# enable syntax highlighting - has to be at the end of the file
+source ~/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+CLICOLOR=1
+export CLICOLOR
