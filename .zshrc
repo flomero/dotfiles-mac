@@ -35,6 +35,13 @@ export PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~ ${COLOR_GIT}$(parse_git_branch)${CO
 # Enable auto-completion
 autoload -Uz compinit && compinit
 
+zstyle ':completion:*' use-cache true # Cache completion to `${ZDOTDIR}/.zcompcache`.
+zstyle ':completion:*' menu 'select' # Make the menu interactive with arrow keys.
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}" # Use LS_COLORS for completion colors.
+#enable colors for ls, etc.
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
 # Norminette
 alias norm="norminette | grep "Error" || echo '${TC_GREEN}Norm check OK: No error${TC_NC}'"
 
