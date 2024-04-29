@@ -50,6 +50,8 @@ alias gl="git log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bol
 alias gll="git log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
 # git status
 alias gs="git status"
+# remove all local branches that are already merged
+alias gprune="git fetch -p && git branch -vv | grep gone | cut -d' ' -f 3 | grep . | xargs git branch -D"
 
 # enable syntax highlighting - has to be at the end of the file
 source ~/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
