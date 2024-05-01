@@ -69,7 +69,7 @@ defaults write com.apple.finder NewWindowTarget -string "PfHm"
 # DOCK                                                                        #
 ###############################################################################
 # Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 36
+defaults write com.apple.dock tilesize -int 20
 # Don’t animate opening applications from the Dock
 defaults write com.apple.dock launchanim -bool false
 # Remove the auto-hiding Dock delay
@@ -82,6 +82,10 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock showhidden -bool true
 # Don’t show recent applications in Dock
 defaults write com.apple.dock show-recents -bool false
+# enable magnification
+defaults write com.apple.dock magnification -bool true
+# set magnification size
+defaults write com.apple.dock largesize -int 64
 
 ###############################################################################
 # BROWSER                                                                     #
