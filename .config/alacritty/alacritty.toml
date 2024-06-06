@@ -1,0 +1,15 @@
+live_config_reload = true
+
+[window]
+opacity = 0.8
+dynamic_padding = false
+decorations = "buttonless"
+decorations_theme_variant = "Dark"
+
+[window.padding]
+x = 20
+y = 20
+
+[window.dimensions]
+columns = 420
+lines = 110

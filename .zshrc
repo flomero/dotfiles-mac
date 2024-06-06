@@ -57,3 +57,5 @@ alias gprune="git fetch -p && git branch -vv | grep gone | cut -d' ' -f 3 | grep
 source ~/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 CLICOLOR=1
 export CLICOLOR
+alias mstest="bash /Users/flfische/42_minishell_tester/tester.sh"
+
