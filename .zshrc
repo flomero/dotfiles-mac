@@ -3,6 +3,10 @@ TC_GREEN=$'\e[0;32m'
 TC_RED=$'\e[0;31m'
 TC_NC=$'\e[0m'
 
+alias src="source ~/.zshrc"
+alias rc="cat ~/.zshrc"
+alias crc="code ~/.zshrc"
+
 # MACOS
 alias pref="source ~/.macos"
 
@@ -43,6 +47,7 @@ zstyle ':completion:*' menu 'select' # Make the menu interactive with arrow keys
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}" # Use LS_COLORS for completion colors.
 #enable colors for ls, etc.
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+alias ls='ls -alh'
 
 # Norminette
 alias norm="norminette | grep "Error" || echo '${TC_GREEN}Norm check OK: No error${TC_NC}'"
@@ -60,3 +65,8 @@ alias gprune="git fetch -p && git branch -vv | grep gone | cut -d' ' -f 3 | grep
 source ~/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 CLICOLOR=1
 export CLICOLOR
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

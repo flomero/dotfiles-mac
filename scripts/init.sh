@@ -21,6 +21,7 @@ fi
 
 # Install brew packages
 brew install stow
+brew install nvm
 
 # Francinette installation script
 # Check if the francinette folder already exists
