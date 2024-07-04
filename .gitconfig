@@ -12,3 +12,12 @@
 	co = checkout
 	cob = checkout -b
 	tree = log --graph --oneline --all
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+[color "status"]
+	changed = yellow
+	added = green
+	untracked = red

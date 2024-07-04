@@ -57,7 +57,7 @@ alias norm="norminette | grep "Error" || echo '${TC_GREEN}Norm check OK: No erro
 alias gl="git log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gll="git log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
 # git status
-alias gs="git status"
+alias gs="git status -sb"
 # remove all local branches that are already merged
 alias gprune="git fetch -p && git branch -vv | grep gone | cut -d' ' -f 3 | grep . | xargs git branch -D"
 
