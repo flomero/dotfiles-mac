@@ -1,3 +1,14 @@
 [user]
 	name = flomero
 	email = 49640251+flomero@users.noreply.github.com
+[alias]
+	undo = reset --soft HEAD^
+	st = status -sb
+	last = log -1 HEAD --stat
+	cm = commit -m
+	rv = remote -v
+	gl = config --global -l
+	amend = commit --amend --no-edit
+	co = checkout
+	cob = checkout -b
+	tree = log --graph --oneline --all
