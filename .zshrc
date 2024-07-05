@@ -7,6 +7,17 @@ alias src="source ~/.zshrc"
 alias rc="cat ~/.zshrc"
 alias crc="code ~/.zshrc"
 
+# ZSH Settings
+# Do not write a duplicate event to the history file.
+setopt HIST_SAVE_NO_DUPS
+
+# Directory Stack
+setopt AUTO_PUSHD           # Push the current directory visited on the stack.
+setopt PUSHD_IGNORE_DUPS    # Do not store duplicates in the stack.
+setopt PUSHD_SILENT         # Do not print the directory stack after pushd or popd.
+alias d='dirs -v'
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
+
 # MACOS
 alias pref="source ~/.macos"
 
@@ -41,6 +52,7 @@ export PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~ ${COLOR_GIT}$(parse_git_branch)${CO
 
 # Enable auto-completion
 autoload -Uz compinit && compinit
+_comp_options+=(globdots) # With hidden files
 
 zstyle ':completion:*' use-cache true # Cache completion to `${ZDOTDIR}/.zcompcache`.
 zstyle ':completion:*' menu 'select' # Make the menu interactive with arrow keys.
