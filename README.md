@@ -21,8 +21,9 @@ source .macos
 - MacOS Settings
 
 ## To Do
-- [ ] Add VSCode settings
-- [ ] Add VSCode extensions
+- [x] Add VSCode settings
+- [x] Add VSCode extensions
+- [ ] Set VSCode conf using stow
 - [ ] Add Vim settings
 - [ ] Add Vim plugins
 

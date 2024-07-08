@@ -1,0 +1,7 @@
+[
+	{
+		"key": "ctrl+c",
+		"command": "github.copilot.toggleCopilot",
+		"when": "editorFocus"
+	}
+]

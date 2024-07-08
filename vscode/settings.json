@@ -1,0 +1,55 @@
+{
+	"editor.fontFamily": "'Monaspace Neon', monospace, Menlo, Monaco, 'Courier New', monospace",
+	"editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', ... (more stylistic sets) ...",
+	"vscode-pets.petColor": "lightbrown",
+	"vscode-pets.throwBallWithMouse": true,
+	"42header.username": "",
+	"42header.email": "",
+	"[c]": {
+		"editor.defaultFormatter": "keyhr.42-c-format"
+	},
+	"codam-norminette-3.displayErrorName": true,
+	"editor.insertSpaces": false,
+	"editor.renderWhitespace": "all",
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": true,
+		"markdown": true,
+		"scminput": false
+	},
+	"explorer.confirmDragAndDrop": false,
+	"files.associations": {
+		"*.h": "c"
+	},
+	"workbench.iconTheme": "material-icon-theme",
+	"keyboard.dispatch": "keyCode",
+	"animations.Install-Method": "Apc Customize UI++",
+	"workbench.colorTheme": "Bearded Theme Vivid Black",
+	"vim.insertModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"j",
+				"k"
+			],
+			"after": [
+				"<esc>"
+			]
+		}
+	],
+	"explorer.sortOrder": "filesFirst",
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"terminal.integrated.scrollback": 10000,
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"explorer.confirmDelete": false,
+	"github.copilot.editor.enableAutoCompletions": true,
+	"python.defaultInterpreterPath": "/usr/local/bin/python3",
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.rulers": [
+		{
+			"column": 80,
+			"color": "#777777"
+		}
+	]
+}
