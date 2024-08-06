@@ -88,6 +88,12 @@ defaults write com.apple.dock magnification -bool true
 defaults write com.apple.dock largesize -int 64
 
 ###############################################################################
+# DESKTOP                                                                     #
+###############################################################################
+
+defaults write com.apple.finder CreateDesktop -bool false
+
+###############################################################################
 # BROWSER                                                                     #
 ###############################################################################
 # use chrome as the default browser
